@@ -1,0 +1,36 @@
+/*顶栏CSS样式*/
+#LOGO {
+	font-size: 3rem;
+}
+
+#log-button {
+	display: inline;	
+	font-size: 2rem;
+}
+
+a {
+	color: white;
+}
+
+#header {
+	background-color: gray;
+}
+
+.e {
+	opacity: 0;
+}
+
+.option {
+	margin-top: 1rem;
+	font-size: 2rem;
+}
+
+
+
+
+
+
+#container {
+	height: 85%;
+	width: 80%;
+}
