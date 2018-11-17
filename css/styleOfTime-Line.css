@@ -28,9 +28,31 @@ a {
 
 
 
-
+/***地图样式*****/
 
 #container {
 	height: 85%;
 	width: 80%;
+}
+
+
+/****报告样式***/
+
+#report {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	width: 20%;
+	border-radius:5px;
+	background-color: white;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.placeSty {
+	color: blue;
+}
+
+.thingSty {
+	color: red;
 }
