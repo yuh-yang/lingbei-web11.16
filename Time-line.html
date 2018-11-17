@@ -478,14 +478,9 @@
 
 				<div class="modal-body">
 					<ul class="list-group">
-	  					<li class="list-group-item"><h4>7:00-9:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-	  					<li class="list-group-item"><h4>9:00-11:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>11:00-13:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>13:00-15:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>15:00-17:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>17:00-19:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>19:00-21:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
-						<li class="list-group-item"><h4>21:00-23:00</h4><p class = "placeSty" id = "place"></p><p class = "thingSty" id = "thing"></p></li>
+                        {% for i in time_line_post_list %}
+	  					<li class="list-group-item"><h4>{{i.time}}</h4><p class = "placeSty" id = "place">{{i.place}}</p><p class = "thingSty" id = "thing">{{i.thing}}</p></li>
+                        {% endfor %}
 					</ul>
 				</div>
 			</div>
