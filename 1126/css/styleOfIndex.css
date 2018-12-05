@@ -1,0 +1,15 @@
+.e {
+	opacity: 0;
+}
+
+.Log {
+	color: black;
+	width: 10%;
+	padding-left: 44%;
+	padding-right: 44%;
+}
+
+.Log:hover {
+	color: black;
+	text-decoration:none;
+}

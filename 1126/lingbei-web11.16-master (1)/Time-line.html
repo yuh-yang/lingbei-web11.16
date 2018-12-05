@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Time-line</title>
+    <link rel="stylesheet" href="css/styleOfTime-Line.css">
+
+    <!--引用vuejs-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <!--Jquery-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--顶栏-->
+    <div class = "container-fluid">
+        <div class = "row" id = "header">   
+            <span class = "col-md-1" style = "padding: 0;"><img src = "pic/picOfMap/blue square.png" id = "square"></span>
+            <span class = "option col-md-5" id = "Map"><p id = "fir" style = "display: inline;margin: 0;">Good morning  Mr.Wang!</h1><p id = "sec" style="">what's your feeling?</p></span>
+        </div>
+    </div>
+
+    <!--左边菜单栏-->
+    <div style = "position: absolute;" id = "menu">
+        <center><a href = "Map.html"><img class = "item" src = "pic/picOfMap/home.png" id = "home"></a></center>
+        <center><a href = "Line.html"><img class = "item" src = "pic/picOfMap/Line.png" id = "Line"></a></center>
+        <center><a href = "Time-line.html"><img class = "item" src = "pic/picOfMap/light.png" id = "light"></a></center>
+
+                <!--该函数为根据页面变换菜单图标的函数-->
+        <script type="text/javascript">
+            window.onload = function change1() {
+                $("#home").fadeIn("slow");
+                if(document.title === "Line") {
+                    document.getElementById("Line").src = "pic/picOfMap/Line-v.png";
+                    document.getElementById("home").src = "pic/picOfMap/home.png";
+                    document.getElementById("light").src = "pic/picOfMap/light.png";
+                }
+                if(document.title === "Map") {
+                    document.getElementById("Line").src = "pic/picOfMap/Line.png";
+                    document.getElementById("home").src = "pic/picOfMap/home-v.png";
+                    document.getElementById("light").src = "pic/picOfMap/light.png";
+                }
+                if(document.title === "Time-line") {
+                    document.getElementById("Line").src = "pic/picOfMap/Line.png";
+                    document.getElementById("home").src = "pic/picOfMap/home.png";
+                    document.getElementById("light").src = "pic/picOfMap/light-v.png";
+                }
+            }
+            
+        </script>
+    </div>
+
+    <!--地图-->
+    <div>
+        <div class = "img-responsive" style = "position: absolute;">
+            <img src = "pic/picOfMap/Map.png" id = "background">
+        </div> 
+    
+<div>
+
+	<!--浮动窗口-->
+	<center>
+		<div id = "report">
+			<button  class = "btn" data-toggle="modal" data-target="#myModal" id = "check-report">查看我的Timeline</button>
+		</div>
+	</center>
+
+	<!--模态框-->
+
+	
+
+	<div class="modal fade" tabindex="-1" role="dialog" id = "myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        			<h4 class="modal-title">这是你的Timeline</h4>
+                    <p id ="data" >这里是日期</p>
+                    <button type="button" class="btn btn-default" aria-label="Left Align" id = "left" ><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
+                    <button type="button" class="btn btn-default" aria-label="Left Align" id = "right"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+				</div>
+
+				<div class="modal-body">
+					<img src = "pic/report.png" class = "img-responsive" id = "back">
+                    <input type="text" class="form-control input" readonly="readonly" style = "width: 15%;display: inline-block;" id = "seven">
+                    <input type="text" class="form-control input" readonly="readonly" style = "width: 15%;display: inline-block;" id = "eleven">
+                    <input type="text" class="form-control input" readonly="readonly" style = "width: 15%;display: inline-block;" id = "three">
+                    <input type="text" class="form-control input" readonly="readonly" style = "width: 15%;display: inline-block;" id = "seven-p">
+                    <input type="text" class="form-control input" readonly="readonly" style = "width: 15%;display: inline-block;" id = "eleven-p">
+                    <input type="text" class="form-control input1" readonly="readonly" style = "width: 15%;display: inline-block;" id = "nine">
+                    <input type="text" class="form-control input1" readonly="readonly" style = "width: 15%;display: inline-block;" id = "one">
+                    <input type="text" class="form-control input1" readonly="readonly" style = "width: 15%;display: inline-block;" id = "five">
+                    <input type="text" class="form-control input1" readonly="readonly" style = "width: 15%;display: inline-block;" id = "nine-p">
+				</div>
+			</div>
+		</div>
+	</div>
+            
+	<script>
+	    $(function(){
+	        $('#myModal').modal({
+	        show:true,
+	        backdrop:true
+	        })
+	    });
+	</script>
+
+
+
+</body>
+</html>

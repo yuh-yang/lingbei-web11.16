@@ -1,0 +1,123 @@
+body {
+	background: url(../pic/picOfIndex/back.png);
+	background-size: cover; 
+	-webkit-background-size: cover;
+    max-height: 100%;
+}
+
+.class {
+    height:100%;
+}
+
+
+#back {
+	height: 100%;
+}
+
+#cloud {
+	display: inline-block;
+	height: 15%;
+	position: absolute;
+	bottom: 35%;
+	left:13%;
+	-webkit-animation:float1 6s infinite;
+}
+
+@-webkit-keyframes float1 /* Safari and Chrome */
+{
+ 			0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(-8px, -30px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+}
+
+#cloud2 {
+	display: inline-block;
+	height: 15%;
+	position: absolute;
+	bottom: 50%;
+	left:35%;
+	-webkit-animation:float2 4s infinite;
+}
+
+@-webkit-keyframes float2 /* Safari and Chrome */
+{
+			0% {
+                transform: translate(0px, 0px);
+            }
+            30% {
+                transform: translate(-5px, -20px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+}
+
+#p1 {
+	height:10%;
+	position: absolute;
+	right:68%;
+	top:34%;
+	-webkit-animation:myfirst 3s infinite;
+}
+
+@keyframes myfirst {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -10px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+}           
+
+#p2 {
+	height:10%;
+	right:57%;
+	top:28%;
+	position: absolute;
+	-webkit-animation:myfirst1 5s infinite;
+}
+
+@keyframes myfirst1 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            30% {
+                transform: translate(0px, -10px);
+            }
+            60% {
+                transform: translate(0px, -20px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }  
+}            
+
+#line {
+    height: 100%;
+	position: absolute;
+	bottom: 3%;
+	right: 42%;
+	-webkit-animation:myRotate 10s infinite;
+}
+
+@-webkit-keyframes myRotate{
+    0%{ -webkit-transform: rotate(0deg);}
+    50%{ -webkit-transform: rotate(180deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}
+
+#l {
+	height:10%;
+	position: absolute;
+	bottom: 57%;
+	left: 25.2%;
+}
